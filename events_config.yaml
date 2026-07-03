@@ -1,0 +1,103 @@
+# Configuration des events Eastmile à surveiller.
+#
+# IMPORTANT :
+# - "timezone" = le fuseau horaire du serveur de jeu (celui affiché comme
+#   "Server time" sur https://wiki.eastmile.org). Compare l'heure affichée
+#   là-bas avec ton heure actuelle pour choisir la bonne valeur.
+#   Exemples valides : "Europe/Paris", "Europe/London", "UTC", "America/New_York"
+#
+# - Chaque event a :
+#     name          : nom affiché dans l'alerte Discord
+#     emoji         : emoji affiché devant le nom (optionnel)
+#     times         : liste des horaires de démarrage, format "HH:MM" (24h),
+#                     dans le fuseau horaire défini ci-dessus
+#     days          : "all" (tous les jours) OU une liste de jours parmi
+#                     [mon, tue, wed, thu, fri, sat, sun]
+#     lead_minutes  : combien de minutes AVANT le début de l'event l'alerte
+#                     doit être envoyée (5 = alerte 5 min avant)
+#
+# Pour compléter la liste, va sur chaque page d'event du wiki
+# (https://wiki.eastmile.org/Events/calendar) et colle-moi le texte des
+# horaires affichés — je m'occupe de les transformer dans ce format.
+
+timezone: "Europe/Paris"
+check_window_minutes: 7   # doit être >= à l'intervalle du cron (voir workflow), marge de sécurité
+
+events:
+  - name: "Rainbow Battle"
+    emoji: "🌈"
+    times: ["01:00", "03:00", "05:00", "09:00", "11:00", "15:00", "19:00", "23:00"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Instant Battle"
+    emoji: "⚔️"
+    times: ["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Asgobas Instant Battle"
+    emoji: "🗡️"
+    times: ["12:20", "17:20", "21:20", "23:20"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Act 4 Raids"
+    emoji: "🐲"
+    times: ["14:00", "18:00", "23:00"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Land of Death"
+    emoji: "💀"
+    times: ["14:00", "18:00", "23:00"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Land of Life"
+    emoji: "🍀"
+    times: ["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Robot Secret Lab"
+    emoji: "🤖"
+    times: ["00:10", "06:10", "12:10", "18:10"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Ranked 1vs1"
+    emoji: "🥊"
+    times: ["09:00"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Ranked 2vs2"
+    emoji: "🥊"
+    times: ["09:00"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Ranked 3vs3"
+    emoji: "🥊"
+    times: ["19:15"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Icebreaker"
+    emoji: "🧊"
+    times: ["01:06", "03:06", "05:06", "09:06", "11:06", "15:06", "19:06", "23:06"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Asgobas Barricade"
+    emoji: "🔥"
+    times: ["01:10", "03:10", "05:10", "09:10", "11:10", "15:10", "19:10", "23:10"]
+    days: "all"
+    lead_minutes: 5
+
+  - name: "Shadow Tower (reset)"
+    emoji: "🗼"
+    times: ["00:00"]
+    days: "all"
+    lead_minutes: 5
