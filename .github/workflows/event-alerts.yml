@@ -1,1 +1,40 @@
+name: Eastmile Event Alerts
 
+on:
+  schedule:
+    # Toutes les 5 minutes. Décalé de quelques minutes après l'heure pile
+    # pour éviter les pics de charge de GitHub Actions (moins de retard).
+    - cron: "2,7,12,17,22,27,32,37,42,47,52,57 * * * *"
+  workflow_dispatch: {}   # permet de lancer le workflow manuellement pour tester
+
+permissions:
+  contents: write   # nécessaire pour committer le fichier state.json
+
+jobs:
+  check-events:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du repo
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Vérifier les events et envoyer les alertes
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+        run: python check_events.py
+
+      - name: Sauvegarder l'état (anti doublons)
+        run: |
+          git config user.name "eastmile-event-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state.json
+          git diff --staged --quiet || git commit -m "Update alert state [skip ci]"
+          git push
