@@ -104,6 +104,6 @@ events:
 
   - name: "TEST"
     emoji: "✅"
-    times: ["14:25"]
+    times: ["14:35"]
     days: "all"
     lead_minutes: 5
