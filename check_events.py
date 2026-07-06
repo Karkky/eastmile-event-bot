@@ -70,12 +70,15 @@ def send_via_bot(token: str, channel_id: str, payload: dict) -> None:
         resp.raise_for_status()
 
 
-def build_event_payload(event: dict, occ_dt: datetime) -> dict:
+def build_event_payload(event: dict, occ_dt: datetime, ping_role_id: str | None = None) -> dict:
     """Construit un message avec un embed riche pour l'alerte d'event.
 
     Utilise le format de timestamp Discord <t:unix:R> qui s'affiche
     en compte à rebours relatif ("dans 5 minutes") et se met à jour
     tout seul côté client.
+
+    Si ping_role_id est fourni, le message mentionne ce rôle (et
+    autorise explicitement la mention pour que la notification parte).
     """
     name = event["name"]
     emoji = event.get("emoji", "\U0001F4E2")
@@ -87,7 +90,11 @@ def build_event_payload(event: dict, occ_dt: datetime) -> dict:
         "description": f"Commence <t:{unix_ts}:R>  •  <t:{unix_ts}:t>",
         "color": color,
     }
-    return {"embeds": [embed]}
+    payload = {"embeds": [embed]}
+    if ping_role_id:
+        payload["content"] = f"<@&{ping_role_id}>"
+        payload["allowed_mentions"] = {"roles": [str(ping_role_id)]}
+    return payload
 
 
 def event_matches_day(event: dict, dt: datetime) -> bool:
@@ -123,6 +130,7 @@ def main() -> None:
     state = load_state()
     changed = False
     sent_count = 0
+    ping_role_id = config.get("ping_role_id")
 
     for event in config["events"]:
         name = event["name"]
@@ -151,7 +159,7 @@ def main() -> None:
                     if state.get(key):
                         continue  # déjà envoyé
 
-                    payload = build_event_payload(event, occ_dt)
+                    payload = build_event_payload(event, occ_dt, ping_role_id)
                     send(payload)
                     print(f"Alerte envoyée : {event['name']} à {occ_dt.strftime('%H:%M')}")
 
