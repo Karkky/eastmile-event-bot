@@ -21,6 +21,7 @@
 # horaires affichés — je m'occupe de les transformer dans ce format.
 
 timezone: "Europe/Paris"
+ping_role_id: "1523734601065828352"   # role mentionne dans chaque alerte (laisser vide pour desactiver)
 check_window_minutes: 7   # doit être >= à l'intervalle du cron (voir workflow), marge de sécurité
 
 events:
