@@ -108,3 +108,9 @@ events:
     times: ["00:15"]
     days: "all"
     lead_minutes: 5
+    
+  - name: "test"
+    emoji: "🗼"
+    times: ["00:25"]
+    days: "all"
+    lead_minutes: 5
