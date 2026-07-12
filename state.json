@@ -1,5 +1,4 @@
 {
-  "Act 4 Raids|2026-07-10T18:00:00+02:00": true,
   "Act 4 Raids|2026-07-10T23:00:00+02:00": true,
   "Act 4 Raids|2026-07-11T14:00:00+02:00": true,
   "Act 4 Raids|2026-07-11T18:00:00+02:00": true,
@@ -45,7 +44,6 @@
   "Icebreaker|2026-07-12T05:06:00+02:00": true,
   "Icebreaker|2026-07-12T11:06:00+02:00": true,
   "Icebreaker|2026-07-12T15:06:00+02:00": true,
-  "Instant Battle|2026-07-10T18:00:00+02:00": true,
   "Instant Battle|2026-07-10T20:00:00+02:00": true,
   "Instant Battle|2026-07-10T22:00:00+02:00": true,
   "Instant Battle|2026-07-11T00:00:00+02:00": true,
@@ -70,14 +68,12 @@
   "Instant Battle|2026-07-12T14:00:00+02:00": true,
   "Instant Battle|2026-07-12T16:00:00+02:00": true,
   "Instant Battle|2026-07-12T18:00:00+02:00": true,
-  "Land of Death|2026-07-10T18:00:00+02:00": true,
   "Land of Death|2026-07-10T23:00:00+02:00": true,
   "Land of Death|2026-07-11T14:00:00+02:00": true,
   "Land of Death|2026-07-11T18:00:00+02:00": true,
   "Land of Death|2026-07-11T23:00:00+02:00": true,
   "Land of Death|2026-07-12T14:00:00+02:00": true,
   "Land of Death|2026-07-12T18:00:00+02:00": true,
-  "Land of Life|2026-07-10T18:00:00+02:00": true,
   "Land of Life|2026-07-10T20:00:00+02:00": true,
   "Land of Life|2026-07-10T22:00:00+02:00": true,
   "Land of Life|2026-07-11T00:00:00+02:00": true,
@@ -132,6 +128,7 @@
   "Robot Secret Lab|2026-07-12T00:10:00+02:00": true,
   "Robot Secret Lab|2026-07-12T06:10:00+02:00": true,
   "Robot Secret Lab|2026-07-12T12:10:00+02:00": true,
+  "Robot Secret Lab|2026-07-12T18:10:00+02:00": true,
   "Shadow Tower (reset)|2026-07-11T00:00:00+02:00": true,
   "Shadow Tower (reset)|2026-07-12T00:00:00+02:00": true
 }
