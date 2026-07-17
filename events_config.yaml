@@ -103,3 +103,8 @@ events:
     days: "all"
     lead_minutes: 5
 
+  - name: "Asgobas Instant Battle"
+    emoji: "🔥"
+    times: ["12:20", "17:20", "21:20", "23:20"]
+    days: "all"
+    lead_minutes: 5
