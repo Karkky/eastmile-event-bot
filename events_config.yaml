@@ -79,12 +79,6 @@ events:
     days: "all"
     lead_minutes: 5
 
-  - name: "Ranked 3vs3"
-    emoji: "🥊"
-    times: ["19:15"]
-    days: "monday", "Wednesday", "Friday"
-    lead_minutes: 5
-
   - name: "Icebreaker"
     emoji: "🧊"
     times: ["01:06", "03:06", "05:06", "09:06", "11:06", "15:06", "19:06", "23:06"]
