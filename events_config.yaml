@@ -82,7 +82,7 @@ events:
   - name: "Ranked 3vs3"
     emoji: "🥊"
     times: ["19:15"]
-    days: "all"
+    days: "monday", "Wednesday", "Friday"
     lead_minutes: 5
 
   - name: "Icebreaker"
