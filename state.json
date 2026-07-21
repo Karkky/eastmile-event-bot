@@ -67,6 +67,7 @@
   "Instant Battle|2026-07-21T18:00:00+02:00": true,
   "Instant Battle|2026-07-21T20:00:00+02:00": true,
   "Instant Battle|2026-07-21T22:00:00+02:00": true,
+  "Instant Battle|2026-07-22T00:00:00+02:00": true,
   "Land of Death|2026-07-20T14:00:00+02:00": true,
   "Land of Death|2026-07-20T18:00:00+02:00": true,
   "Land of Death|2026-07-20T23:00:00+02:00": true,
@@ -97,6 +98,7 @@
   "Land of Life|2026-07-21T18:00:00+02:00": true,
   "Land of Life|2026-07-21T20:00:00+02:00": true,
   "Land of Life|2026-07-21T22:00:00+02:00": true,
+  "Land of Life|2026-07-22T00:00:00+02:00": true,
   "Rainbow Battle|2026-07-20T01:00:00+02:00": true,
   "Rainbow Battle|2026-07-20T03:00:00+02:00": true,
   "Rainbow Battle|2026-07-20T05:00:00+02:00": true,
@@ -126,5 +128,6 @@
   "Robot Secret Lab|2026-07-21T12:10:00+02:00": true,
   "Robot Secret Lab|2026-07-21T18:10:00+02:00": true,
   "Shadow Tower (reset)|2026-07-20T00:00:00+02:00": true,
-  "Shadow Tower (reset)|2026-07-21T00:00:00+02:00": true
+  "Shadow Tower (reset)|2026-07-21T00:00:00+02:00": true,
+  "Shadow Tower (reset)|2026-07-22T00:00:00+02:00": true
 }
