@@ -45,7 +45,6 @@
   "Icebreaker|2026-09-03T05:06:00+02:00": true,
   "Icebreaker|2026-09-03T09:06:00+02:00": true,
   "Icebreaker|2026-09-03T11:06:00+02:00": true,
-  "Instant Battle|2026-09-01T12:00:00+02:00": true,
   "Instant Battle|2026-09-01T14:00:00+02:00": true,
   "Instant Battle|2026-09-01T16:00:00+02:00": true,
   "Instant Battle|2026-09-01T18:00:00+02:00": true,
@@ -76,7 +75,6 @@
   "Land of Death|2026-09-02T14:00:00+02:00": true,
   "Land of Death|2026-09-02T18:00:00+02:00": true,
   "Land of Death|2026-09-02T23:00:00+02:00": true,
-  "Land of Life|2026-09-01T12:00:00+02:00": true,
   "Land of Life|2026-09-01T14:00:00+02:00": true,
   "Land of Life|2026-09-01T16:00:00+02:00": true,
   "Land of Life|2026-09-01T18:00:00+02:00": true,
@@ -129,6 +127,7 @@
   "Robot Secret Lab|2026-09-02T18:10:00+02:00": true,
   "Robot Secret Lab|2026-09-03T00:10:00+02:00": true,
   "Robot Secret Lab|2026-09-03T06:10:00+02:00": true,
+  "Robot Secret Lab|2026-09-03T12:10:00+02:00": true,
   "Shadow Tower (reset)|2026-09-02T00:00:00+02:00": true,
   "Shadow Tower (reset)|2026-09-03T00:00:00+02:00": true
 }
